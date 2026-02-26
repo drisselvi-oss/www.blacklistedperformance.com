@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Borshk:wght@700&display=swap" rel="stylesheet">
+    <title>Demande de Devis - BlackListed Performance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto 20px; 
+            width: 100%; /* S'adapte à la largeur de l'écran */
+            max-width: 600px; /* Ajuste la largeur max pour un meilleur rendu */
+			height: auto
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #555;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100%;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .siret {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://i.postimg.cc/cJcfCMv3/Capture.jpg" style="max-width : 100%; height : auto;" alt="Logo BlackListed Performance" class="logo">
+        <h1>Demande de Devis</h1>
+        <form>
+            <label for="name">Nom / Prénom</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Téléphone</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="city">Adresse de l’intervention</label>
+            <input type="text" id="city" name="city" required>
+			
+			<label for="city">ville</label>
+            <input type="text" id="city" name="city" required>
+			
+			<label for="postal">Code postal</label>
+            <input type="number" id="postal" name="postal" required>
+
+            <label for="location-type">Type de Lieu</label>
+            <select id="location-type" name="location-type" required>
+                <option value="domicile">Domicile</option>
+                <option value="travail">Travail</option>
+                <option value="parking-prive">Parking privé</option>
+                <option value="autre">Autre</option>
+            </select>
+
+            <label for="registration">Immatriculation</label>
+            <input type="text" id="registration" name="registration" required>
+
+            <label for="vehicle">Véhicule (Marque / Modèle / Motorisation)</label>
+            <input type="text" id="vehicle" name="vehicle" required>
+
+            <label for="year">Année de mise en circulation</label>
+            <input type="number" id="year" name="year" required>
+
+            <label for="mileage">Kilométrage</label>
+            <input type="number" id="mileage" name="mileage" required>
+
+            <label for="request-type">Type de demande</label>
+            <select id="request-type" name="request-type" required>
+                <option value="diagnostic">Diagnostic</option>
+                <option value="repair">Réparation</option>
+                <option value="reprogramming">Reprogrammation</option>
+                <option value="pollution-system">Système anti-pollution</option>
+                <option value="other">Autre</option>
+            </select>
+
+            <label for="description">Description du problème</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <label for="photos">Importer des Photos</label>
+            <input type="file" id="photos" name="photos" accept="image/*" multiple>
+			
+			<div style="margin-top:15px;">
+  <input type="checkbox" id="rgpd" name="rgpd" required>
+  <label for="rgpd" style="font-size:14px;">
+    J’accepte que mes données soient utilisées pour le traitement de ma demande de devis conformément à la 
+    <a href="politique-confidentialite.html" target="_blank">
+      politique de confidentialité
+    </a>.
+  </label>
+</div>
+            <button type="submit">Envoyer la demande</button>
+        </form>       
+    </div>
+	<a href="mentions-legales.html">Mentions légales</a> |
+<a href="politique-confidentialite.html">Politique de confidentialité</a>
+	<p style="font-size:12px; margin-top:10px;">
+  Les informations collectées sont utilisées uniquement pour répondre à votre demande de devis.
+  Elles ne sont ni vendues ni transmises à des tiers.
+</p>
+</body>
+</html>
